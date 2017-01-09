@@ -14,6 +14,7 @@
 		301728A91E204437006E7825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301728A71E204437006E7825 /* LaunchScreen.storyboard */; };
 		301728B41E204438006E7825 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301728B31E204438006E7825 /* FoodTrackerTests.swift */; };
 		301728BF1E204438006E7825 /* FoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301728BE1E204438006E7825 /* FoodTrackerUITests.swift */; };
+		3099BA111E24361200B7F406 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3099BA101E24361200B7F406 /* Meal.swift */; };
 		30A098BC1E2301C5000315B0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A098BB1E2301C5000315B0 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		301728BA1E204438006E7825 /* FoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		301728BE1E204438006E7825 /* FoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerUITests.swift; sourceTree = "<group>"; };
 		301728C01E204438006E7825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3099BA101E24361200B7F406 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		30A098BB1E2301C5000315B0 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				3017289E1E204437006E7825 /* AppDelegate.swift */,
 				301728A01E204437006E7825 /* ViewController.swift */,
 				30A098BB1E2301C5000315B0 /* RatingControl.swift */,
+				3099BA101E24361200B7F406 /* Meal.swift */,
 				301728A21E204437006E7825 /* Main.storyboard */,
 				301728A51E204437006E7825 /* Assets.xcassets */,
 				301728A71E204437006E7825 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3099BA111E24361200B7F406 /* Meal.swift in Sources */,
 				301728A11E204437006E7825 /* ViewController.swift in Sources */,
 				30A098BC1E2301C5000315B0 /* RatingControl.swift in Sources */,
 				3017289F1E204437006E7825 /* AppDelegate.swift in Sources */,
