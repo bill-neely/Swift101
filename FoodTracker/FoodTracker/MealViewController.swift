@@ -26,10 +26,16 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         // Handle the text field's user input through delegate callbacks
         nameTextField.delegate = self
+        
+        // Setup views if editing an existing meal
+        if let meal = meal {
+            navigationItem.title = meal.name
+            nameTextField.text = meal.name
+            photoImageView.image = meal.photo
+            ratingControl.rating = meal.rating
+        }
         
         // Enable the save button if the text field is not empty
         updateSaveButtonState()
@@ -37,7 +43,18 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     // MARK: Navigaton 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+        // Depeneding on the style of presentation (modal or push presentation), this view
+        // controller needs to be dismissed in two different ways
+        let isPresentinginAddMealMode = presentingViewController is UINavigationController
+        if isPresentinginAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        else if let owningNavigationController = navigationController {
+            owningNavigationController.popViewController(animated: true)
+        }
+        else {
+            fatalError("the MealViewController is not inside a navigation controller")
+        }
     }
     
     // this method lets you configure a view controller before it is presented
